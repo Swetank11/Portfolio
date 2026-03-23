@@ -11,7 +11,8 @@ export function ScrollReveal({
   className?: string,
   as?: React.ElementType | string
 }) {
-  const Component = motion[as as keyof typeof motion] || motion.section;
+  // Fixing "Type instantiation is excessively deep" by casting to any
+  const Component = (motion as any)[as as string] || motion.section;
 
   return (
     <Component
