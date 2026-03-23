@@ -7,7 +7,8 @@ export const CenterPlayVideo = ({ src, className }: { src: string, className?: s
   
   // The video is considered "in view" only when it intersects the middle 20% of the screen.
   // -40% margin on top and bottom creates a tight trigger band directly in the center.
-  const isInView = useInView(ref, { margin: "-40% 0px -40% 0px", once: false });
+  // Relaxed from -40% to -15% to make it easier to trigger the story board
+  const isInView = useInView(ref, { margin: "-15% 0px -15% 0px", once: false });
   const [canPlayAudio, setCanPlayAudio] = useState(false);
 
   // Modern browsers strictly block audio autoplay until a physical interaction occurs.
@@ -56,6 +57,7 @@ export const CenterPlayVideo = ({ src, className }: { src: string, className?: s
       transition={{ type: "tween", duration: 0.6, ease: "easeOut" }}
       loop
       playsInline
+      autoPlay
       muted // Default to muted for initial load bypassing
       controls
       className={className}

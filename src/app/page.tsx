@@ -141,7 +141,7 @@ export default function Home() {
             {/* Video 1: Video Left, Text Right (Wider Video Container) */}
             <ScrollReveal as="div" className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
               <FocusReveal className="order-2 md:order-1 md:col-span-8 relative overflow-hidden rounded-xl bg-black/40 border border-white/5 aspect-video md:aspect-[16/9] flex items-center justify-center cursor-pointer shadow-2xl">
-                <CenterPlayVideo className="w-full h-full object-contain block transform-gpu" src="/videos/project1.mov?v=1" />
+                <CenterPlayVideo className="w-full h-full object-contain block transform-gpu" src="/videos/project1.mp4?v=1" />
               </FocusReveal>
               <FocusReveal className="order-1 md:order-2 md:col-span-4 flex flex-col justify-center px-4">
                 <span className="text-[#ff5634] font-bold text-sm uppercase tracking-widest mb-4 block">Documentary</span>
