@@ -1,0 +1,325 @@
+<html class="dark" lang="en"><head></head><body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">```html
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#690005",
+              "on-primary-container": "#580a00",
+              "inverse-on-surface": "#313030",
+              "tertiary-container": "#909191",
+              "primary-fixed-dim": "#ffb4a4",
+              "on-tertiary": "#2f3131",
+              "primary-container": "#ff5634",
+              "secondary-fixed": "#e3e2e2",
+              "surface-variant": "#353534",
+              "error-container": "#93000a",
+              "on-secondary": "#2f3131",
+              "surface-dim": "#131313",
+              "on-surface": "#e5e2e1",
+              "on-background": "#e5e2e1",
+              "surface-container-low": "#1c1b1b",
+              "on-secondary-fixed": "#1a1c1c",
+              "inverse-primary": "#b82000",
+              "on-tertiary-fixed": "#1a1c1c",
+              "secondary-container": "#484949",
+              "outline-variant": "#5c403a",
+              "on-secondary-fixed-variant": "#464747",
+              "surface-container-lowest": "#0e0e0e",
+              "error": "#ffb4ab",
+              "secondary-fixed-dim": "#c6c6c6",
+              "surface-tint": "#ffb4a4",
+              "surface": "#131313",
+              "outline": "#ac8881",
+              "on-primary-fixed": "#3e0500",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "primary-fixed": "#ffdad3",
+              "primary": "#ffb4a4",
+              "surface-container": "#201f1f",
+              "secondary": "#c6c6c6",
+              "on-surface-variant": "#e6bdb5",
+              "surface-bright": "#3a3939",
+              "on-tertiary-container": "#282a2a",
+              "inverse-surface": "#e5e2e1",
+              "tertiary-fixed": "#e2e2e2",
+              "on-primary-fixed-variant": "#8d1600",
+              "on-primary": "#640d00",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-container": "#b8b8b8",
+              "surface-container-highest": "#353534",
+              "tertiary": "#c6c6c7",
+              "on-tertiary-fixed-variant": "#454747",
+              "background": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Anton", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pulse-indicator {
+            box-shadow: 0 0 0 0 rgba(255, 86, 52, 0.7);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 86, 52, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(255, 86, 52, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 86, 52, 0); }
+        }
+        .text-outline-header {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+    </style>
+<header class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl shadow-[0px_20px_50px_rgba(0,0,0,0.4)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#ff5634] font-headline uppercase">PROFESSIONAL_EDITOR</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-[#ff5634] font-bold border-b-2 border-[#ff5634] pb-1 font-label text-sm uppercase tracking-widest" href="#">Work</a>
+<a class="text-white/70 hover:text-white transition-colors font-label text-sm uppercase tracking-widest" href="#">Archive</a>
+<a class="text-white/70 hover:text-white transition-colors font-label text-sm uppercase tracking-widest" href="#">About</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center gap-3 px-4 py-2 rounded-full bg-surface-bright/50 backdrop-blur-md border border-white/5">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="text-[10px] font-bold tracking-[0.1em] text-white uppercase whitespace-nowrap">Available for project</span>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-xl font-bold uppercase tracking-tighter text-sm hover:bg-[#ff5634]/90 hover:shadow-[0_0_20px_rgba(255,86,52,0.3)] transition-all active:scale-95 duration-200">
+                Let's Talk
+            </button>
+</div>
+</div>
+</header>
+<main class="pt-32 px-8 max-w-[1440px] mx-auto min-h-screen">
+<!-- Hero Section -->
+<section class="mb-20">
+<h1 class="font-headline text-[clamp(4rem,12vw,10rem)] leading-[0.85] uppercase tracking-tighter text-white mb-8">SWETANK<br/><span class="text-[#ff5634]">SINHA</span></h1>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+<p class="text-white/60 text-xl md:text-2xl max-w-xl leading-relaxed">
+                Crafting cinematic narratives through brutalist precision. I am a Video Editor focused on high-impact motion, editing, and visual architecture.
+            </p>
+<div class="flex flex-wrap gap-4 md:justify-end">
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold uppercase tracking-widest text-on-surface-variant">Motion Design</span>
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold uppercase tracking-widest text-on-surface-variant">Editorial</span>
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold uppercase tracking-widest text-on-surface-variant">Color Grading</span>
+</div>
+</div>
+</section>
+<!-- Bento Grid Portfolio -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 pb-6">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-high rounded-xl aspect-video md:aspect-auto md:h-[600px]">
+<img alt="" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Cinematic neon lighting in a dark urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7IwLaWUCxJYwZ_3eM0lws7dJJV8HZSbD5_0rP4nhLFBiavk-NYSzKzLpNsQehgUkuaaRjLZhOfHsAFXUNJpWjyxX7twmfooAVLwDFutJkBwys-WZODsQs30WMpdbo5bcPq4ROlU7bs_mrlcf7iAka2-5bdgvRITGA01Uv9mfxzm5h2B7wnmBg8lLrQfpwTdIx-7C4hOu_LFOxw3TGX2J2jZ9vY2YMGRu5NSJmkwTV3zb9fk9zypTajJ_vxqLBjRyKy7YtmE0V5kI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<div class="flex justify-between items-end">
+<div>
+<span class="text-primary-container font-bold text-xs uppercase tracking-[0.2em] mb-4 block">Selected Works 01</span>
+<h3 class="font-headline text-5xl md:text-7xl uppercase text-white tracking-tighter">Midnight Protocol</h3>
+</div>
+<span class="material-symbols-outlined text-4xl text-white group-hover:translate-x-2 transition-transform">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Vertical Card -->
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-container-high rounded-xl h-[400px] md:h-auto">
+<img alt="" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Abstract architectural photography with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASw8RzPEGQdUffyprpVz0H2HXIPxORD26DF4_jw040mGo1sBE1mvLWFNUDLnYOPMAORa294efQhvpm9TDIwbhGHA2HtqcEzv1PbaoOgTInRFQTDi7QzHNl1xdoYGZWb1aVwYMPyi7kjbAsCWqxvI9X6QxxmrkNB3OCfgftsCU1cFPIfszT7OmH8Ek01f2IyhLWX-G8_9Wuq12lK21PIicrdrcMX0mCBbn6iZC-GToow9HKNacnN41OmDW89KtxgtG3oll1Dqq7Wkc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="text-white/40 font-bold text-xs uppercase tracking-[0.2em] mb-2 block">Brand Film</span>
+<h3 class="font-headline text-4xl uppercase text-white tracking-tighter">Concrete Soul</h3>
+</div>
+</div>
+<!-- Small Wide Card -->
+<div class="md:col-span-5 group relative overflow-hidden bg-surface-container-high rounded-xl h-[400px]">
+<img alt="" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Vintage film camera lens close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS-yEg1MlPV2Qw9NKcWMrcm8RgTp-o55APQpzsTlNfSSo9PWJazxqYKFeEb0mg9U75Z3gu68ycylXtGqmbcUkgF4_-GGs_KIF4vuA7GJXtifD_lqlv_999JuosAdeG-fN_jZ4dxmbGT8JAOk7C7oG7vXtXhTwWVrsrBZvxiNrhYK7cRWoWyU0Fj5spyrKAxFLTBGZjVmKzCLdX0TMWUtlFqqYhE_HYEN_7P1iKqOqzErjgnw21iUsfikkypHNwNtV4GSd3QiBG-kI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="text-white/40 font-bold text-xs uppercase tracking-[0.2em] mb-2 block">Experimental</span>
+<h3 class="font-headline text-4xl uppercase text-white tracking-tighter">Optic Drift</h3>
+</div>
+</div>
+<!-- Feature Card 2 -->
+<div class="md:col-span-7 group relative overflow-hidden bg-surface-container-high rounded-xl h-[400px]">
+<img alt="" class="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="Modern geometric shapes with red lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpepeJmgTrGgchRqLbaONcLxgX8-47IGlcB6xL6cFGkupOoEUygMLHS7z9km4JsOrJpWZAaMz7zBorwZJijEWd4I9x0QNdozD3JD5BTwVcqoxTsgwoFwnq4_vTRmRD5YmlTQRQzralzbyAq4PoBZBBRetzLc0TBCUF5KtonCB-0_UdH-M2JuRDEzHwNUNKqamJryq4moK_v3gviQgTs6WrCJQZpBo_VuJk9B2tuXlD3QWksuN9uBtE8kOypF463pSV0QuKu4Q745g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<div class="flex justify-between items-end w-full">
+<div>
+<span class="text-primary-container font-bold text-xs uppercase tracking-[0.2em] mb-2 block">Commercial</span>
+<h3 class="font-headline text-4xl md:text-5xl uppercase text-white tracking-tighter">Vantablack Series</h3>
+</div>
+<button class="bg-white/10 backdrop-blur-md p-4 rounded-full border border-white/10 hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-white" style='font-variation-settings: "FILL" 1;'>play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Challenges & Solutions Section -->
+<section class="mb-20">
+<div class="border-t border-white/10 pt-12">
+<h2 class="font-headline text-5xl md:text-7xl uppercase tracking-tighter text-white mb-12">CHALLENGES <span class="text-[#ff5634]">&amp;</span> SOLUTIONS</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
+<div class="space-y-10">
+<div class="group">
+<span class="block text-primary-container font-bold text-xs uppercase tracking-widest mb-4">Challenge 01</span>
+<h4 class="text-white text-2xl font-bold uppercase tracking-tight mb-4 leading-none">Rhythmic Complexity</h4>
+<p class="text-white/60 text-lg leading-relaxed">
+                            Maintaining absolute rhythmic integrity in high-tempo, multi-layered cuts often leads to visual fatigue or loss of narrative clarity during intense action sequences.
+                        </p>
+</div>
+<div class="group">
+<span class="block text-primary-container font-bold text-xs uppercase tracking-widest mb-4">Challenge 02</span>
+<h4 class="text-white text-2xl font-bold uppercase tracking-tight mb-4 leading-none">Disparate Sources</h4>
+<p class="text-white/60 text-lg leading-relaxed">
+                            Unifying visual language when working with mixed media formats, varying lighting conditions, and inconsistent color profiles from multiple camera systems.
+                        </p>
+</div>
+</div>
+<div class="space-y-10">
+<div class="group">
+<span class="block text-white/40 font-bold text-xs uppercase tracking-widest mb-4">Solution 01</span>
+<h4 class="text-white text-2xl font-bold uppercase tracking-tight mb-4 leading-none">Sound-Sync Precision</h4>
+<p class="text-white/60 text-lg leading-relaxed font-medium">
+                            Developing precise audio-visual anchor points. Utilizing sub-frame editing techniques to ensure every cut aligns with specific transient peaks for visceral impact.
+                        </p>
+</div>
+<div class="group">
+<span class="block text-white/40 font-bold text-xs uppercase tracking-widest mb-4">Solution 02</span>
+<h4 class="text-white text-2xl font-bold uppercase tracking-tight mb-4 leading-none">Custom LUT Architecture</h4>
+<p class="text-white/60 text-lg leading-relaxed font-medium">
+                            Architecting bespoke color grading pipelines and custom LUT development that normalize disparate sources into a cohesive, high-contrast cinematic aesthetic.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats/Values Bento -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-20">
+<div class="p-8 bg-surface-container-low rounded-xl border border-white/5 flex flex-col justify-between aspect-square md:aspect-auto">
+<span class="text-white/20 font-bold uppercase tracking-widest text-xs">Experience</span>
+<span class="font-headline text-6xl text-white">12+</span>
+<p class="text-white/40 text-sm uppercase tracking-wider">Years of Editing</p>
+</div>
+<div class="p-8 bg-primary-container rounded-xl flex flex-col justify-between aspect-square md:aspect-auto">
+<span class="text-on-primary-container/60 font-bold uppercase tracking-widest text-xs">Projects</span>
+<span class="font-headline text-6xl text-on-primary-container">450</span>
+<p class="text-on-primary-container/60 text-sm uppercase tracking-wider">Frames Cut</p>
+</div>
+<div class="md:col-span-2 p-10 bg-surface-container-low rounded-xl border border-white/5 flex items-center justify-center text-center">
+<h2 class="font-headline text-4xl uppercase tracking-tighter text-white">
+                "The frame is the <span class="italic text-primary-container">canvas</span>, the cut is the <span class="italic">brushstroke</span>."
+            </h2>
+</div>
+</section>
+<!-- More Works Section - Redesigned based on Image 12 -->
+<section class="mb-32">
+<div class="flex justify-between items-start mb-16 relative">
+<div class="flex flex-col">
+<h2 class="font-headline text-[clamp(4rem,10vw,8rem)] leading-none uppercase tracking-tighter text-white opacity-10 absolute -top-12 -left-2 select-none">MORE WORKS</h2>
+<h2 class="font-headline text-[clamp(4rem,10vw,8rem)] leading-none uppercase tracking-tighter text-white relative z-10">MORE <span class="text-[#ff5634]">WORKS</span></h2>
+</div>
+<div class="pt-6">
+<a class="flex items-center gap-4 px-8 py-3 rounded-full border border-white/20 text-white font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-300 group" href="#">
+                SEE ALL
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">arrow_outward</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Immersive Project Card 1 -->
+<div class="group relative aspect-[16/10] overflow-hidden rounded-xl bg-surface-container-low">
+<img alt="Project preview" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8UfW3z8pW0-8u9tO4k-P5r2Y9fL7m_D9N8j4v6z7_r3w5_v8m7n9b0-1c2d3e4f5g6h7i8j9k0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-0 left-0 p-10 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-2 block">Music Video</span>
+<h4 class="text-white text-3xl font-headline uppercase tracking-tight">Cyberpunk Pulse</h4>
+</div>
+</div>
+<!-- Immersive Project Card 2 -->
+<div class="group relative aspect-[16/10] overflow-hidden rounded-xl bg-surface-container-low">
+<img alt="Project preview" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8UfW3z8pW0-8u9tO4k-P5r2Y9fL7m_D9N8j4v6z7_r3w5_v8m7n9b0-1c2d3e4f5g6h7i8j9k1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-0 left-0 p-10 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-2 block">Documentary</span>
+<h4 class="text-white text-3xl font-headline uppercase tracking-tight">Shadows of Industry</h4>
+</div>
+</div>
+<!-- Immersive Project Card 3 -->
+<div class="group relative aspect-[16/10] overflow-hidden rounded-xl bg-surface-container-low">
+<img alt="Project preview" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8UfW3z8pW0-8u9tO4k-P5r2Y9fL7m_D9N8j4v6z7_r3w5_v8m7n9b0-1c2d3e4f5g6h7i8j9k2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-0 left-0 p-10 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-2 block">Commercial</span>
+<h4 class="text-white text-3xl font-headline uppercase tracking-tight">Kinetic Motion</h4>
+</div>
+</div>
+<!-- Immersive Project Card 4 -->
+<div class="group relative aspect-[16/10] overflow-hidden rounded-xl bg-surface-container-low">
+<img alt="Project preview" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuE8UfW3z8pW0-8u9tO4k-P5r2Y9fL7m_D9N8j4v6z7_r3w5_v8m7n9b0-1c2d3e4f5g6h7i8j9k3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-0 left-0 p-10 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-2 block">Narrative</span>
+<h4 class="text-white text-3xl font-headline uppercase tracking-tight">The Red Line</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Let's Work Together Section -->
+<section class="mb-20 relative min-h-[500px] flex items-center overflow-hidden rounded-xl bg-surface-container-low border border-white/5">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASw8RzPEGQdUffyprpVz0H2HXIPxORD26DF4_jw040mGo1sBE1mvLWFNUDLnYOPMAORa294efQhvpm9TDIwbhGHA2HtqcEzv1PbaoOgTInRFQTDi7QzHNl1xdoYGZWb1aVwYMPyi7kjbAsCWqxvI9X6QxxmrkNB3OCfgftsCU1cFPIfszT7OmH8Ek01f2IyhLWX-G8_9Wuq12lK21PIicrdrcMX0mCBbn6iZC-GToow9HKNacnN41OmDW89KtxgtG3oll1Dqq7Wkc"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-12 py-20 flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="md:w-1/2">
+<h2 class="font-headline text-[clamp(3.5rem,8vw,6rem)] leading-[0.9] uppercase tracking-tighter text-white">LET'S WORK<br/><span class="text-[#ff5634]">TOGETHER</span></h2>
+</div>
+<div class="md:w-1/3 space-y-8 flex flex-col items-start md:items-end text-left md:text-right">
+<p class="text-white/70 text-lg md:text-xl leading-relaxed max-w-sm">
+                    Have a project in mind? We'd love to hear about it. Let's create something great together!
+                </p>
+<button class="group relative px-10 py-4 rounded-full border-2 border-[#ff5634] text-[#ff5634] font-bold uppercase tracking-widest text-sm hover:bg-[#ff5634] hover:text-white transition-all duration-300">
+                    GET IN TOUCH
+                </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-12 px-8 mt-20 bg-[#0e0e0e] border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center w-full gap-8 max-w-[1440px] mx-auto">
+<div class="text-lg font-bold text-white/20 font-headline tracking-widest uppercase">PROFESSIONAL_EDITOR</div>
+<div class="flex gap-10">
+<a class="text-white/40 hover:text-[#ff5634] transition-colors duration-300 font-label text-xs uppercase tracking-[0.05em]" href="#">Instagram</a>
+<a class="text-white/40 hover:text-[#ff5634] transition-colors duration-300 font-label text-xs uppercase tracking-[0.05em]" href="#">LinkedIn</a>
+<a class="text-white/40 hover:text-[#ff5634] transition-colors duration-300 font-label text-xs uppercase tracking-[0.05em]" href="#">Vimeo</a>
+</div>
+<div class="font-label text-xs tracking-[0.05em] uppercase text-white/40">
+            ©2024 CINEMATIC BRUTALIST. ALL RIGHTS RESERVED.
+        </div>
+</div>
+</footer>
+```</body></html>

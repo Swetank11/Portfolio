@@ -1,26 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #131313;
+  --foreground: #e5e2e1;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  
+  --color-surface-lowest: #0e0e0e;
+  --color-surface-low: #1c1b1b;
+  --color-surface: #131313;
+  --color-surface-high: #2a2a2a;
+  --color-surface-highest: #353534;
+  --color-surface-bright: #3a3939;
+  
+  --color-accent: #ff5634;
+  --color-accent-dim: #ffb4a4;
+  --color-accent-custom: #ff4925;
+  
+  --color-text-base: #e5e2e1;
+  --color-text-dim: #e6bdb5;
+  --color-text-inverted: #2f3131;
+  
+  --color-outline-base: #ac8881;
+  --color-outline-ghost: #5c403a;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-overlay: #353534;
+
+  --font-display: var(--font-anton);
+  --font-script: var(--font-geist-sans);
+
+  --shadow-ambient: 0px 20px 50px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 15px rgba(255, 86, 52, 0.3);
+
+  --letter-spacing-tight-display: -0.03em;
+  --letter-spacing-loose-label: 0.05em;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-text-base);
+  font-family: var(--font-script);
+}
+
+.pulse-indicator {
+  box-shadow: 0 0 0 0 rgba(255, 86, 52, 0.7);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 86, 52, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(255, 86, 52, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 86, 52, 0); }
+}
+
+.text-outline-header {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  color: transparent;
+}
+
+* {
+  border-color: var(--color-outline-ghost);
 }
