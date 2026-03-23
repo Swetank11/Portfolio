@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
+// This component renders a cinematic video player with scroll-synced playback triggers.
 export const CenterPlayVideo = ({ src, className }: { src: string, className?: string }) => {
   const ref = useRef<HTMLVideoElement>(null);
   
